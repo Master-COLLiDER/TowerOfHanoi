@@ -134,8 +134,8 @@ class TowerOfHanoi {
     }
     released() {
         for (let j = 0; j < 3; j++) {
-            let i = this.rings[j].length-1;
-              if(i!==-1)
+//             let i = this.rings[j].length-1;
+              for(let i = 0; i< this.rings[j].length;i++)
                  {
 
                 this.rings[j][i].dragging = false;
