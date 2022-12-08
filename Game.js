@@ -49,9 +49,9 @@ class TowerOfHanoi {
         for (let j = 0; j < 3; j++) {
             for (let i = 0; i < this.rings[j].length; i++) {
 
-//                 if (this.rings[j][i].moved) {
+                if (this.rings[j][i].moved) {
                     
-                if (true) {
+//                 if (true) {
                     let y = 380 - 20 * (i + 1);
                     let x = (200 * (j + 1)) - (this.rings[j][i].w / 2);
                     if (this.rings[j][i].x != x || this.rings[j][i].y != y) {
