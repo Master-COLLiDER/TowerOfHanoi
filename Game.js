@@ -141,10 +141,10 @@ class TowerOfHanoi {
                 this.rings[j][i].dragging = false;
                 this.rings[j][i].moved = true;
 
-                if (mouseY > 10 && mouseY < 200 && !isNaN(this.curFrom)) {
+                if (!isNaN(this.curFrom)) {
                     let centerX = mouseX + (this.rings[j][i].w / 2);
 
-                    if (centerX < 300 && centerX > 100) {
+                    if (centerX < 300) {
                         if (this.curFrom !== 0)
                             this.move(this.curFrom, 0)
                         else
@@ -154,7 +154,7 @@ class TowerOfHanoi {
                             this.move(this.curFrom, 1)
                         else
                           this.slideSound.play();
-                    } else if (centerX < 700 && centerX > 500) {
+                    } else if (centerX > 500) {
                         if (this.curFrom !== 2)
                             this.move(this.curFrom, 2)
                         else
