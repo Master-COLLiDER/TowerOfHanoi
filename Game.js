@@ -3,6 +3,7 @@ let defaultLocation = [
     [1,2,3,4, 5],
     []
 ]
+let noOfRings=5;
 
 class TowerOfHanoi {
     constructor() {
@@ -225,7 +226,7 @@ class TowerOfHanoi {
       return true;
     }
   checkWin(){
-    if(this.rings[0].length===8||this.rings[2].length===8)
+    if(this.rings[0].length===noOfRings||this.rings[2].length===noOfRings)
        {
         this.win = true;
        }
